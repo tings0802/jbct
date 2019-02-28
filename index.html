@@ -3,29 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>大賽測試網頁</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<h3>網頁導覽</h3>
-			<ul>
-				<li><a href="#originate">活動緣起</a></li>
-				<li><a href="#information">活動說明</a></li>
-				<li><a href="#upload">作品上傳</a></li>
-			</ul>
-			<hr>
+		<nav class="nav" id="nav">
+			<!-- <h1>成大盃簡報大賽</h1> -->
+			<table width="600px" height="50px" align="center">
+				<tr>
+					<td align="center"><a href="#originate">首頁</a></td>
+					<td align="center"><a href="#originate">活動緣起</a></td>
+					<td align="center"><a href="#information">活動說明</a></td>
+					<td align="center"><a href="#upload">作品上傳</a></td>
+					<td align="center"><a href="https://www.facebook.com/learnppt/?epa=SEARCH_BOX" target="_blank">Facebook</a></td>
+					<td align="center"><a href="https://www.instagram.com/learnppt/" target="_blank">Instagram</a></td>
+				</tr>
+			</table>
+			<a id="top" href="#nav">TOP</a>
 		</nav>
+		<div class="poster" align="center">
+			<a href="https://www.facebook.com/learnppt/?epa=SEARCH_BOX" target="_blank"><img src="poster.jpg" width="804" height="306" title="簡報草堂" alt="簡報草堂"></a>
+		</div>
 	</header>
-	<div>
-		<!-- <img src="./profile.jpg" alt="圖片無法顯示" title="簡報草堂"> -->
-	</div>
-	<div id="originate">
-		<h2>活動緣起</h2>
+	<div class="block" id="originate">
+		<h2 class="h2">活動緣起</h2>
 		<p>成校至今，多元發展一直是國立成功大學全校師生共同發展的目標，隨著科技的日新月異，簡報與溝通能力其重要性與日俱增，教授們會透過報告來訓練學生簡報及表達能力，也越來越多的工作坊開設簡報相關的課程，例如:成大領導力中心、N次坊等，而各個頂尖大學也相繼舉辦簡報大賽，然而，成功大學卻從未提供學生此種舞台，因此，我們希望能夠透過創辦「簡報大賽」以及「簡報工作坊」給予學生機會，一個培養簡報能力的舞台，進而成為多方面人才。</p>
 		<p>成大簡報大賽不同於一般的競賽，我們更注重的的是參賽者在過程中所獲得參賽者在過程中所獲得的經驗，旨在打破成大學生對於簡報的想像，促進學生對簡報的重視。簡報不只能應用在課程中，更擴及就職就職時的面試、工作時的報告。因此，我們透過一系列的公工作坊課程，增進參與者的溝通技巧、邏輯思考、簡報美學等多等多方面能力！讓成大學生改變對於簡報的既定印象！並將課程所學之經驗與技巧應用在簡報上！</p>
 	</div>
-	<div id="information">
-		<h2>活動說明</h2>
+	<div class="block" id="information">
+		<h2 class="h2">活動說明</h2>
 		<h3>活動時程</h3>
 		<h4>第一階段 影片初選</h4>
 		<ul>
@@ -61,31 +67,31 @@
 			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 		</ol>
 	</div>
-	<div id="upload">
-		<h2>作品上傳</h2>
+	<div class="block" id="upload">
+		<h2 class="h2">作品上傳</h2>
 		<form>
-			<div>
-				<label>姓名</label>
-				<input type="text" name="name" required>
+			<div class="input_group" align="center">
+				<div class="input_label"><label>姓名</label></div>
+				<div class="input_field"><input type="text" name="name" required>
 			</div>
-			<div>
-				<label>系級</label>
-				<input type="text" name="dept" required>
+			<div class="input_group" align="center">
+				<div class="input_label"><label>系級</label></div>
+				<div class="input_field"><input type="text" name="dept" required></div>
 			</div>
-			<div>
-				<label>學號</label>
-				<input type="text" name="student_id" required>
+			<div class="input_group" align="center">
+				<div class="input_label"><label>學號</label></div>
+				<div class="input_field"><input type="text" name="student_id" required></div>
 			</div>
-			<div>
-				<label>影片名稱</label>
-				<input type="text" name="title" required>
+			<div class="input_group" align="center">
+				<div class="input_label"><label>影片名稱</label></div>
+				<div class="input_field"><input type="text" name="title" required></div>
 			</div>
-			<div>
-				<label>YouTube網址</label>
-				<input type="text" name="link" required>
+			<div class="input_group" align="center">
+				<div class="input_label"><label>YouTube網址</label></div>
+				<div class="input_field"><input type="text" name="link" required></div>
 			</div>
-			<div>
-				<input type="submit" name="submit">
+			<div class="input_group" align="center">
+				<div class="submit"><input type="submit" name="submit"></div>
 			</div>
 		</form>
 	</div>	
