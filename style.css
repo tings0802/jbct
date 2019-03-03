@@ -1,6 +1,13 @@
-body{
+*{
+	position: relative;
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
 	font-family: 微軟正黑體;
 	line-height: 36px;
+	text-decoration: none;
 }
 h1{
 	font-size: 36px;
@@ -19,9 +26,22 @@ img{
 .nav a{
 	line-height: 18px;
 	font-size: 18px;
+	background-color: #fff;
 	color: rgb(0, 115, 185);
 	font-weight: bold;
-	background-color: #fff;
+}
+#top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+
+	background-color: rgb(0, 115, 185);
+	color: #fff;
+	padding: 10px;
+	opacity: 0.7;
+	border-radius: 20%;
+
+	text-align: center;
 }
 .poster{
 	background-color: rgb(0, 115, 185);
@@ -33,27 +53,37 @@ img{
 	background-color: #fff;
 }
 .input_group{
-	width: 800px;
-	position: relative;
+	display: block;
 }
 .input_label{
 	width: 120px;
 	height: 50px;
 	margin: 10px;
 	font-weight: bold;
-	position: absolute;
-	left: 0px;
+	display: inline-block;
 }
 .input_field{
-	width: 400px;
+	margin: 10px;
+	display: inline-block;
 }
-.input_group input{
+.input_field input{
 	width: 400px;
 	height: 50px;
-	margin: 10px;
 }
-#top{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
+
+.btn{
+	background-color: rgb(0, 115, 185);
+	display: inline-block;
+	width: 400px;
+	line-height: 50px;
+	vertical-align: top;
+	border-radius: 25px;
+	color: #fff;
+}
+.btn a{
+	color: #fff;
+	font-weight: bold;
+}
+.btn:hover{
+	background-color: rgb(243, 196, 58);
 }
