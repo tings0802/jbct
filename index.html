@@ -9,15 +9,16 @@
 <body>
 	<header>
 		<nav class="nav" id="nav">
-			<!-- <h1>成大盃簡報大賽</h1> -->
-			<table width="600px" height="50px" align="center">
+			<table height="50px" align="center">
 				<tr>
-					<td align="center"><a href="#originate">首頁</a></td>
+					<td align="center"><a href="#nav">首頁</a></td>
 					<td align="center"><a href="#originate">活動緣起</a></td>
 					<td align="center"><a href="#information">活動說明</a></td>
 					<td align="center"><a href="#upload">作品上傳</a></td>
+					<td align="center"><a href="#video">比賽影片</a></td>
 					<td align="center"><a href="https://www.facebook.com/learnppt/?epa=SEARCH_BOX" target="_blank">Facebook</a></td>
 					<td align="center"><a href="https://www.instagram.com/learnppt/" target="_blank">Instagram</a></td>
+					<td align="center"><a href="https://medium.com/student-powerpoint-design" target="_blank">Medium</a></td>
 				</tr>
 			</table>
 			<a id="top" href="#nav">TOP</a>
@@ -34,37 +35,47 @@
 	<div class="block" id="information">
 		<h2 class="h2">活動說明</h2>
 		<h3>活動時程</h3>
-		<h4>第一階段 影片初選</h4>
-		<ul>
-			<li>主題公布：4/1(一)</li>
-			<li>上傳時間：4/8(一)-4/27(六)</li>
-			<li>投票時間：4/27(六)-5/10(五)</li>
-			<li>晉級公布：5/11(六)</li>
-		</ul>
-		<h4>第二階段 現場決賽</h4>
-		<ul>
-			<li>決賽時間：5/25(六)</li>
-			<li>決賽地點：國立成功大學國際會議廳</li>
-		</ul>
+		<div class="time">
+			<h4>第一階段 影片初選</h4>
+			<ul>
+				<li>主題公布：4/1(一)</li>
+				<li>上傳時間：4/8(一)-4/27(六)</li>
+				<li>投票時間：4/27(六)-5/10(五)</li>
+				<li>晉級公布：5/11(六)</li>
+			</ul>
+		</div>
+		<div class="time">
+			<h4>第二階段 現場決賽</h4>
+			<ul>
+				<li>決賽時間：5/25(六)</li>
+				<li>決賽地點：國立成功大學國際會議廳</li>
+			</ul>
+		</div>
 		<h3>評分方式</h3>
-		<h4>第一階段 影片初選</h4>
-		<ul>
-			<li>簡報美學15%：簡報視覺呈現、排版、設計的精美程度</li>
-			<li>肢體與口語表達25%：口語表達流暢程度、肢體語言、講者整體表現</li>
-			<li>簡報內容30%：議題深度、是否包含個人觀點、吸引觀眾程度</li>
-			<li>網路評分30%：由參賽影片的熱門程度（YouTube讚數）決定</li>
-		</ul>
-		<h4>第二階段 現場決賽</h4>
-		<ul>
-			<li>簡報美學15%：簡報視覺呈現、排版、設計的精美程度</li>
-			<li>肢體與口語表達30%：口語表達流暢程度、肢體語言、講者整體表現</li>
-			<li>簡報內容35%：議題深度、是否包含個人觀點、吸引觀眾程度</li>
-			<li>觀眾現場評分20%：由現場觀眾給分平均決定</li>
-		</ul>
+		<div class="score">
+			<h4 style="margin: 0;">第一階段 影片初選</h4>
+			<ul>
+				<li>簡報美學15%：簡報視覺呈現、排版、設計的精美程度</li>
+				<li>肢體與口語表達25%：口語表達流暢程度、肢體語言、講者整體表現</li>
+				<li>簡報內容30%：議題深度、是否包含個人觀點、吸引觀眾程度</li>
+				<li>網路評分30%：由參賽影片的熱門程度（YouTube讚數）決定</li>
+			</ul>
+			<img src="chart1.png" alt="決賽評分方式" class="score_chart">
+		</div>
+		<div class="score">
+			<h4 style="margin: 0;">第二階段 現場決賽</h4>
+			<ul>
+				<li>簡報美學15%：簡報視覺呈現、排版、設計的精美程度</li>
+				<li>肢體與口語表達30%：口語表達流暢程度、肢體語言、講者整體表現</li>
+				<li>簡報內容35%：議題深度、是否包含個人觀點、吸引觀眾程度</li>
+				<li>觀眾現場評分20%：由現場觀眾給分平均決定</li>
+			</ul>
+			<img src="chart2.png" alt="決賽評分方式" class="score_chart">
+		</div>
 		<h3>注意事項</h3>
 		<ol>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aspernatur!</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque.</li>
 			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 		</ol>
 	</div>
@@ -94,9 +105,46 @@
 			<div class="input_group" align="center">
 				<div class="input_label"><label></label></div>
 				<!-- <div class="input_field"><input type="submit" name="submit"></div> -->
-				<div class="btn"><a href="#nav"><span>Submit</span></a></div>
+				<div class="btn"><a href="upload.html"><span>確認送出</span></a></div>
 			</div>
 		</form>
+	</div>
+	<div class="block" id="video">
+		<h2 class="h2">比賽影片</h2>
+		<div class="video_group">
+			<div class="video_area">
+				<video src="https://www.youtube.com/watch?v=wP4TNwCTb04" controls></video>
+				<div class="video_text">
+					<h3>影片標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi, dolorem enim ipsam culpa eius.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, error. Perspiciatis, molestiae!</p>
+				</div>
+			</div>
+			<div class="video_area">
+				<video src="https://youtu.be/M7UyrGwCcCE" controls></video>
+				<div class="video_text">
+					<h3>影片標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, repudiandae minima voluptas laboriosam accusantium in.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo voluptatem, eum vero fugiat.</p>
+				</div>
+			</div>
+			<div class="video_area">
+				<video src="https://youtu.be/M7UyrGwCcCE" controls></video>
+				<div class="video_text">
+					<h3>影片標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos accusamus repellat laudantium fugiat laborum!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, vitae!</p>
+				</div>
+			</div>
+			<div class="video_area">
+				<video src="https://youtu.be/M7UyrGwCcCE" controls></video>
+				<div class="video_text">
+					<h3>影片標題</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eos ex, saepe hic laboriosam aut!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
 	</div>	
 </body>
 </html>
