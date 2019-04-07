@@ -1,6 +1,10 @@
+/* import */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
 /* -------------------- global -------------------- */
 * {
 	position: relative;
+	box-sizing: border-box;
 }
 html, body {
 	margin: 0;
@@ -26,15 +30,46 @@ a {
 
 
 /* -------------------- utility -------------------- */
-.u-block {
+.d-block {
 	display: block;
 }
-
-
+.bgc-white {
+	background-color: #F7F8F8;
+}
+.bgc-beige {
+	background-color: #F9F7D0;
+}
+.bgc-yellow {
+	background-color: #F8C751;
+}
+.bgc-orange {
+	background-color: #FA7D2B;
+}
+.bgc-blue {
+	background-color: #296B9B;
+}
+.bgc-cyan {
+	background-color: #1FAFD2;
+}
+.bdc-orange {
+	border: 2px solid #FA7D2B;
+}
+.c-blue {
+	color: #296B9B;
+}
+.c-white {
+	color: #F7F8F8;
+}
+.c-cyan {
+	color: #1FAFD2;
+}
+.fw-bold {
+	font-weight: bold;
+}
 
 /* -------------------- header elements -------------------- */
 .navbar {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #1FAFD2;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -42,23 +77,46 @@ a {
 	width: 100%;
 	text-align: center;
 }
+.navbar .row {
+	left: 15px;
+	width: 100%;
+}
 .navbar .element {
 	display: inline-block;
-	height: 60px;
-	background-color: rgba(0, 0 ,0 ,0);
-	color: #fff;
-	line-height: 36px;
+	max-height: 20vh;
+	background-color: rgba(0, 0, 0, 0);
+	line-height: 18px;
+	font-size: 0.8rem;
+	margin: 0 -20px;
 }
 .navbar .logo {
 	display: inline-block;
-	width: 400px;
-	height: 80px;
-	font-size: 2rem;
+	width: 100%;
+	max-height: 30vh;
+	font-size: 1.8rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 576px) {
 	.navbar .element {
-		height: 80px;
-		line-height: 60px;
+		font-size: 0.9rem;
+		line-height: 20px;
+	}
+	.navbar .logo {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 768px) {
+	.navbar .element {
+		font-size: 1rem;
+		line-height: 30px;
+	}
+	.navbar .logo {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 992px) {
+	.navbar .element {
+		height: 60px;
+		line-height: 40px;
 	}
 }
 
@@ -66,7 +124,6 @@ a {
 
 /* -------------------- main elements -------------------- */
 .jumbo {
-	background-color: rgba(0, 0, 0, 0.2);
 	padding-top: 200px;
 	padding-bottom: 60px;
 }
@@ -122,13 +179,12 @@ a {
 
 
 .info {
-	background-color: rgba(0, 0, 0, 0.2);
-	padding-top: 180px;
+	padding-top: 120px;
 	padding-bottom: 50px;
 	border-top: 2px solid #fff;
 }
 .info .title {
-	background-color: rgba(0,0,0,0.2);
+	background-color: #F8C751;
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 24px;
@@ -138,8 +194,8 @@ a {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
-.info .element {
-	height: 150px;
+.info button {
+	width: 100%;
 }
 @media (min-width: 992px) {
 	.info .element {
@@ -157,18 +213,117 @@ a {
 }
 
 
+.inner {
+	padding: 10px 0;
+}
+.topic-icon {
+	display: inline-block;
+	width: 40%;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.topic-text {
+	display: inline-block;
+	width: 55%;
+	vertical-align: top;
+	padding: 0 10px;
+}
+.topic-text h5 {
+	font-size: 1.2rem;
+}
+.topic-text h6 {
+	font-size: 0.8rem;
+}
+.topic-text p {
+	font-size: 0.9rem;
+}
+.stage {
+	display: inline-block;
+	width: 25%;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.arrow {
+	display: inline-block;
+	width: 10%;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.time-block{
+	height: 200px;
+}
+.time-area {
+	display: inline-block;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.timeline {
+	width: 3px;
+	height: 170px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+.time-point {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.dot-area {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}
+.text-area {
+	display: inline-block;
+	width: 80%;
+	height: 100%;
+	vertical-align: top;
+}
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.rule-var {
+	display: inline-block;
+	width: 30%;
+	color: #296B9B;
+}
+.rule-val {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+	color: #296B9B;
+}
+
 .voting-info .element{
 	height: 600px;
 	font-size: 2rem;
 	line-height: 260px;
 }
-
-
 .video-container {
 	display: inline-block;
 	width: 100%;
 	border: 2px solid #fff;
+	border-radius: 16px;
 	margin: 15px 0;
+	overflow: hidden;
 }
 .img-box {
 	display: block;
@@ -212,7 +367,7 @@ a {
 
 /* -------------------- footer elements -------------------- */
 .footer {
-	background-color: #000;
+	background-color: #1FAFD2;
 	padding: 40px 0;
 }
 .footer .element {
@@ -221,10 +376,24 @@ a {
 	color: #fff;
 	font-weight: thin;
 }
+.footer a {
+	color: #fff;
+	line-height: 2rem;
+}
 
 
 /* 黃 rgb(243, 196, 58) */
 /* 藍 rgb(0, 115, 185) */
+
+
+/* v1.0 colors */
+/* #F7F8F8 white */
+/* #F9F7D0 rice */
+/* #F8C751 yellow */
+/* #FA7D2B orange */
+/* #296B9B blue */
+/* #1FAFD2 cyan */
+
 
 @media screen and (min-width: 576px) {
 	

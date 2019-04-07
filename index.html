@@ -2,41 +2,40 @@
 <html lang="zh-TW">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale=1.5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale=1.5, shrink-to-fit=no">
 	<title>PPT Tang</title>
 
 	<!-- plugins -->
+
+	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- owl-carousel -->
 	<link rel="stylesheet" href="owl.carousel.css">
 	<link rel="stylesheet" href="owl.theme.default.css">
-	<link rel="stylesheet" href="jquery-3.3.1.js">
-	<link rel="stylesheet" href="owl.carousel.js">
+	
 	<!-- custom -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript">
-		alert(window.devicePixelRatio)
-		alert(screen.width)
-	</script>
+
 </head>
 <body>
 	<header class="navbar">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4">
-					<a href="index.html"><div class="element logo">Logo</div></a>
+				<div class="col-12 col-md-4">
+					<a href="index.html"><div class="element logo c-white">Logo</div></a>
 				</div>
-				<div class="col-3 col-lg-2">
-					<a href="#info"><span class="element">活動說明</span></a>
+				<div class="col-3 col-md-2">
+					<a href="#info"><span class="element c-white">活動說明</span></a>
 				</div>
-				<div class="col-3 col-lg-2">
-					<a href="vedio.html"><span class="element">比賽影片</span></a>
+				<div class="col-3 col-md-2">
+					<a href="vedio.html"><span class="element c-white">比賽影片</span></a>
 				</div>
-				<div class="col-3 col-lg-2">
-					<a href="#contact"><span class="element">聯絡我們</span></a>
+				<div class="col-3 col-md-2">
+					<a href="#contact"><span class="element c-white">聯絡我們</span></a>
 				</div>
-				<div class="col-3 col-lg-2">
-					<a href="https://forms.gle/jnjo5edw7dTw2FzWA" target="blank"><span class="element">我要報名</span></a>
+				<div class="col-3 col-md-2">
+					<a href="https://forms.gle/jnjo5edw7dTw2FzWA" target="blank"><span class="element c-white">我要報名</span></a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +43,7 @@
 
 
 	<section class="main">
-		<div class="jumbo">
+		<div class="jumbo bgc-beige">
 			<div class="container owl-carousel owl-theme">
 				<div class="element" data-merge="5">
 					<div class="image" style="background-image: url('draft/狂想曲-1-10.png');">
@@ -59,7 +58,7 @@
 					</div>
 				</div>
 				<div class="element" data-merge="5">
-					<div class="image" style="background-image: url('draft/狂想曲-1-10.png');">
+					<div class="image" style="background-image: url('../v0.3.0/poster.jpg');">
 						<div class="mask"></div>
 					</div>
 					<div class="text">
@@ -90,117 +89,426 @@
 				</div>
 			</div>
 		</div>
-		<div class="info" id="info">
+
+		
+		<!-- accordion -->
+		<div class="info bgc-beige" id="info">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="title">活動說明</div>
 					</div>
-					<div class="col-3">
-						<a href="#"><div class="element">大賽主題</div></a>
-					</div>
-					<div class="col-3">
-						<a href="#"><div class="element">比賽辦法</div></a>
-					</div>
-					<div class="col-3">
-						<a href="#"><div class="element">重要時程</div></a>
-					</div>
-					<div class="col-3">
-						<a href="#"><div class="element">獎勵辦法</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
+					<div class="col-12">
+						<div class="accordion" id="infomation">
 
-		<div class="info">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="title">大賽主題</div>
-					</div>
-					<div class="col-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat eum natus nobis, officia cum aspernatur, temporibus laudantium vitae dolor itaque hic nemo fuga expedita cumque minima ut sunt, quaerat ab totam eligendi repudiandae earum ipsa. Id quibusdam delectus impedit sapiente doloribus nihil accusamus eligendi beatae expedita incidunt similique odio accusantium, at totam adipisci itaque enim, ex fugit laudantium! Cupiditate necessitatibus tenetur labore saepe tempora fuga aliquid repudiandae veritatis optio soluta quae illum nesciunt incidunt nihil aperiam, itaque doloremque animi autem blanditiis porro consectetur. Rem quam, officiis sint a odio esse, aliquid illo optio eos perspiciatis quo atque, non voluptatem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+						  <div class="card">
+						    <div class="card-header bgc-white bdc-orange" id="heading1">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+						          大賽主題
+						        </button>
+						      </h2>
+						    </div>
 
-		<div class="info">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="title">比賽辦法</div>
-					</div>
-					<div class="col-12">
-						<h4>注意事項</h4>
-						<ol>
-							<li>所有活動相關辦法，皆以本網頁公佈為準，獎品項目則以實物為準。</li>
-							<li>參加者於參加本活動同時，即同意接受本活動之活動辦法與注意事項規範，若發現有使用網頁機器人違反活動之規定，主辦單位得取消其參加或得獎資格，並就因此所生之損害，得向參加者請求損害賠償。</li>
-							<li>參加者應保證所有填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。如有不實或不正確之情事，主辦單位得取消參加或得獎資格。</li>
-							<li>本活動因不可抗力或其他特殊原因致無法舉行時，主辦單位有權決定取消、終止、修改或暫停本活動。</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
+						    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#infomation">
+						      <div class="card-body bgc-white">
+										<div class="inner">
+											<div class="topic-icon"></div>
+											<div class="topic-text">
+												<h5 class="c-blue fw-bold">減少不平等</h5>
+												<h6 class="c-blue fw-bold">Reduce Inqualities</h6>
+												<p>社會持續在進步，各地區之間的資源差距逐漸擴大，我們該如何因應不平等的現象，創造分配更均衡的社會？<a class="c-cyan" href="https://www.un.org/sustainabledevelopment/inequality/" target="_blank"> see more</a></p>
+											</div>
+										</div>
 
-		<div class="info">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="title">重要時程</div>
-					</div>
-					<div class="col-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat eum natus nobis, officia cum aspernatur, temporibus laudantium vitae dolor itaque hic nemo fuga expedita cumque minima ut sunt, quaerat ab totam eligendi repudiandae earum ipsa. Id quibusdam delectus impedit sapiente doloribus nihil accusamus eligendi beatae expedita incidunt similique odio accusantium, at totam adipisci itaque enim, ex fugit laudantium! Cupiditate necessitatibus tenetur labore saepe tempora fuga aliquid repudiandae veritatis optio soluta quae illum nesciunt incidunt nihil aperiam, itaque doloremque animi autem blanditiis porro consectetur. Rem quam, officiis sint a odio esse, aliquid illo optio eos perspiciatis quo atque, non voluptatem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+										<div class="inner">
+											<div class="topic-icon"></div>
+											<div class="topic-text">
+												<h5 class="c-blue fw-bold">責任消費與生產</h5>
+												<h6 class="c-blue fw-bold">Responsible Consumption and Production</h6>
+												<p>社會持續過度的生產不僅造成資源浪費，同時也產生大量汙染，過剩的產品處理也對地球造成傷害。身為消費者的我們，是否也助長了過度生產呢？我們該如何做到「用得更少，做得更好」，留給下一世代更好的環境呢？<a class="c-cyan" href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank"> see more</a></p>
+												
+											</div>
+										</div>
 
-		<div class="info">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="title">獎勵辦法</div>
-					</div>
-					<div class="col-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat eum natus nobis, officia cum aspernatur, temporibus laudantium vitae dolor itaque hic nemo fuga expedita cumque minima ut sunt, quaerat ab totam eligendi repudiandae earum ipsa. Id quibusdam delectus impedit sapiente doloribus nihil accusamus eligendi beatae expedita incidunt similique odio accusantium, at totam adipisci itaque enim, ex fugit laudantium! Cupiditate necessitatibus tenetur labore saepe tempora fuga aliquid repudiandae veritatis optio soluta quae illum nesciunt incidunt nihil aperiam, itaque doloremque animi autem blanditiis porro consectetur. Rem quam, officiis sint a odio esse, aliquid illo optio eos perspiciatis quo atque, non voluptatem.</p>
+										<div class="inner">
+											<div class="topic-icon"></div>
+											<div class="topic-text">
+												<h5 class="c-blue fw-bold">氣候行動</h5>
+												<h6 class="c-blue fw-bold">Climate Action</h6>
+												<p>颶風、熱浪、洪水，世界各地頻傳氣候災難。面對大自然的求救訊息，人類該如何守護我們的地球呢？<a class="c-cyan" href="https://www.un.org/sustainabledevelopment/climate-change-2/" target="_blank"> see more</a></p>
+											</div>
+										</div>
+
+										<div class="inner">
+											<div class="topic-icon"></div>
+											<div class="topic-text">
+												<h5 class="c-blue fw-bold">和平與正義制度</h5>
+												<h6 class="c-blue fw-bold">Peace, Justice and Strong Institutions</h6>
+												<p>「人權之所以重要，是因為每個人都想活得自在安心。」但人權是否真正落實在現實社會中？若沒有，我們又該如何彌補呢？<a class="c-cyan" href="https://www.un.org/sustainabledevelopment/peace-justice/" target="_blank"> see more</a></p>
+											</div>
+										</div>
+
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="card">
+						    <div class="card-header bgc-white bdc-orange" id="heading2">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+						          活動時程
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#infomation">
+						      <div class="card-body bgc-white">
+						      	<!-- <div class="inner">
+						      		<div class="stage">
+						      			<h5>初賽報名</h5>
+						      			<p>自四個備選主題中選定一個，錄製一段3~5分鐘的簡報影片，上傳至個人雲端後，至官網點選「我要報名」填寫基本資料及影片連結，即完成比賽報名。團隊將於隔日午夜將影片上傳至官方網站及簡報草堂YouTube頻道。</p>
+						      		</div>
+						      		<div class="arrow"></div>
+						      		<div class="stage">
+						      			<h5>作品遴選</h5>
+						      			<p>綜合YouTube讚數以及團隊評審評分，取前 10 名進入決賽。</p>
+						      		</div>
+						      		<div class="arrow"></div>
+						      		<div class="stage">
+						      			<h5>現場決賽</h5>
+						      			<p>決賽地點為成功大學國際會議廳，入選者將進行 5~7分鐘的現場簡報，由評審及現場觀眾投票選出前2名頒發獎金獎狀。決賽之簡報題目需與初賽相同。</p>
+						      		</div>
+						      	</div> -->
+
+						      	<div class="inner">
+						      		<div class="time-block">
+						      			<div class="time-area">
+													<div class="timeline bgc-blue"></div>
+													<div class="time-point">
+								      			<div class="dot-area">
+								      				<div class="dot bgc-blue"></div>
+								      			</div
+								      			><div class="text-area">
+								      				<div class="date">4/10（三）</div>
+								      				<div class="task">開始報名、上傳影片</div>
+								      			</div>
+								      		</div>
+
+								      		<div class="time-point">
+								      			<div class="dot-area">
+								      				<div class="dot bgc-blue"></div>
+								      			</div
+								      			><div class="text-area">
+								      				<div class="date">4/29（一）</div>
+								      				<div class="task">影片上傳截止</div>
+								      			</div>
+								      		</div>
+
+								      		<div class="time-point">
+								      			<div class="dot-area">
+								      				<div class="dot bgc-blue"></div>
+								      			</div
+								      			><div class="text-area">
+								      				<div class="date">5/11（六）</div>
+								      				<div class="task">公布決賽名單</div>
+								      			</div>
+								      		</div>
+
+								      		<div class="time-point">
+								      			<div class="dot-area">
+								      				<div class="dot bgc-blue"></div>
+								      			</div
+								      			><div class="text-area">
+								      				<div class="date">5/25（六）</div>
+								      				<div class="task">決賽</div>
+								      			</div>
+								      		</div>
+												</div>
+						      		</div>
+												
+						      		</div>
+						      	</div>
+
+						      </div>
+						    </div>
+
+						    <div class="card">
+							    <div class="card-header bgc-white bdc-orange" id="heading3">
+							      <h2 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+							          初賽辦法
+							        </button>
+							      </h2>
+							    </div>
+							    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#infomation">
+							      <div class="card-body bgc-white">
+
+							        <div class="inner">
+							        	<div class="container">
+							        		<div class="row">初賽</div>
+							        		<div class="row">
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">參賽影片</div
+							        					><div class="rule-val">參賽者自行錄製</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">影片時間</div
+							        					><div class="rule-val">3 ~ 5分鐘</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">影片內容</div
+							        					><div class="rule-val">參賽者本人、簡報內容</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">影片限制</div
+							        					><div class="rule-val">禁止特效、剪接、調速，人與簡報須同時出現於影片中</div>
+							        				</div>
+							        			</div>
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">呈現方式</div
+							        					><div class="rule-val">子視窗 or 同一畫面</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">上傳地點</div
+							        					><div class="rule-val">個人雲端</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">上傳格式</div
+							        					><div class="rule-val">檔名：四選一主題-影片標題-參賽者姓名</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">備註</div
+							        					><div class="rule-val">若影片不符規定，將失去參賽資格</div>
+							        				</div>
+							        			</div>
+							        		</div>
+							        	</div>
+							        </div>
+
+							        <div class="inner">
+							        	<div class="container">
+							        		<div class="row">初賽評分標準</div>
+							        		<div class="row">
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">簡報內容（35%）</div
+							        					><div class="rule-val">議題掌握程度、具有自身見解、內容邏輯與組織性、內容啟發性、切合現況</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">肢體與口語表達（30%）</div
+							        					><div class="rule-val">口語流暢度與連貫性、引發台下共鳴、表情與肢體語言、語調層次、時間掌握</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">簡報美學（20%）</div
+							        					><div class="rule-val">與簡報輔助程度/相容性、整體內容佈局、單張資訊處理手法/技巧/可讀性、頁面視覺美化</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">網路投票（20%）</div
+							        					><div class="rule-val">
+							        						採計簡報草堂官方YouTube頻道中各參賽影片所得讚數，第一名即獲得該項目滿分，其餘參賽者依據自己所得票數與第一名得票之比例決定該項得分<br>
+							        						公式：本項得分 = ( 得票數/最高票數 ) x 100%<br>
+							        						舉例：A拿100票(最高票)，B拿75票，則A得本項目100%分數，B得本項75%分數
+							        					</div>
+							        				</div>
+							        			</div>
+							        		</div>
+							        	</div>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="card">
+							    <div class="card-header bgc-white bdc-orange" id="heading4">
+							      <h2 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+							          決賽辦法
+							        </button>
+							      </h2>
+							    </div>
+							    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#infomation">
+							      <div class="card-body bgc-white">
+							        <div class="inner">
+							        	<div class="container">
+							        		<div class="row">決賽</div>
+							        		<div class="row">
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">決賽時間</div
+							        					><div class="rule-val">5/25（六）下午</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">決賽組數</div
+							        					><div class="rule-val">10組</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">演講時間</div
+							        					><div class="rule-val">5 ~ 7分鐘</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">比賽形式</div
+							        					><div class="rule-val">現場簡報</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">比賽題目</div
+							        					><div class="rule-val">同初賽題目</div>
+							        				</div>
+							        			</div>
+							        		</div>
+							        	</div>
+							        </div>
+
+							        <div class="inner">
+							        	<div class="container">
+							        		<div class="row">決賽評分標準</div>
+							        		<div class="row">
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">簡報內容（30%）</div
+							        					><div class="rule-val">議題掌握程度、具有自身見解、內容邏輯與組織性、內容啟發性、切合現況</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">肢體與口語表達（35%）</div
+							        					><div class="rule-val">口語流暢度與連貫性、引發台下共鳴、表情與肢體語言、語調層次、時間掌握</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">簡報美學（20%）</div
+							        					><div class="rule-val">與簡報輔助程度/相容性、整體內容佈局、單張資訊處理手法/技巧/可讀性、頁面視覺美化</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">觀眾投票（15%）</div
+							        					><div class="rule-val">
+							        						採計現場觀眾得票數，第一名即獲得該項目滿分，其餘參賽者依據自己所得票數與第一名得票之比例決定該項得分<br>
+							        						公式：本項得分 = ( 得票數/最高票數 ) x 100%<br>
+							        						舉例：A拿100票(最高票)，B拿75票，則A得本項目100%分數，B得本項75%分數
+							        					</div>
+							        				</div>
+							        			</div>
+							        		</div>
+							        	</div>
+							        </div>
+
+							      </div>
+							    </div>
+							  </div>
+
+								<div class="card">
+							    <div class="card-header bgc-white bdc-orange" id="heading5">
+							      <h2 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+							          獎勵辦法
+							        </button>
+							      </h2>
+							    </div>
+							    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#infomation">
+							      <div class="card-body bgc-white">
+
+							        <div class="inner">
+							        	<div class="container">
+							        		<div class="row">
+							        			<div class="col-12">
+							        				<div class="rule-item">
+							        					<div class="rule-var">第一名 1位</div
+							        					><div class="rule-val">獎金10000元、獎狀1張</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">第二名 1位</div
+							        					><div class="rule-val">獎金5000元、獎狀1張</div>
+							        				</div>
+							        				<div class="rule-item">
+							        					<div class="rule-var">佳作 數名</div
+							        					><div class="rule-val">獎金1000元、獎狀1張</div>
+							        				</div>
+							        			</div>
+							        		</div>
+							        </div>
+
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="card">
+							    <div class="card-header bgc-white bdc-orange" id="heading6">
+							      <h2 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+							          注意事項
+							        </button>
+							      </h2>
+							    </div>
+							    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#infomation">
+							      <div class="card-body bgc-white">
+							      	<div class="inner">
+							      		<ol>
+													<li>所有活動相關辦法，皆以本網頁公佈為準，獎品項目則以實物為準。</li><br>
+													<li>參加者於參加本活動同時，即同意接受本活動之活動辦法與注意事項規範，若發現有使用網頁機器人違反活動之規定，主辦單位得取消其參加或得獎資格，並就因此所生之損害，得向參加者請求損害賠償。</li><br>
+													<li>參加者應保證所有填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。如有不實或不正確之情事，主辦單位得取消參加或得獎資格。</li><br>
+													<li>本活動因不可抗力或其他特殊原因致無法舉行時，主辦單位有權決定取消、終止、修改或暫停本活動。</li>
+												</ol>
+							      	</div>
+							      </div>
+							    </div>
+							  </div>
+
+						  </div>
+
+							  
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
 
 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
-					<div class="element" id="contact">聯絡我們</div>
+					<div class="element" id="contact">
+						<h5 class="u-block">社群</h5>
+						<a class="u-block" href="https://www.facebook.com/learnppt/?epa=SEARCH_BOX">Facebook</a>
+						<a class="u-block" href="https://www.instagram.com/learnppt/">Instagram</a>
+						<a class="u-block" href="https://medium.com/student-powerpoint-design">Medium</a>
+						<a class="u-block" href="https://www.youtube.com/channel/UCBR4mXXNtAjl1QPK6Tpj92A?view_as=subscriber">YouTube</a>
+					</div>
 				</div>
 				<div class="col-3">
-					<div class="element">贊助我們</div>
+					<div class="element">
+						<h5 class="u-block">贊助我們</h5>
+					</div>
 				</div>
 				<div class="col-3">
-					<div class="element">贊助廠商</div>
+					<div class="element">
+						<h5 class="u-block">贊助廠商</h5>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+	
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-	<script src="jquery-3.3.1.js"></script>
+	<!-- popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- bootstrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- carousel -->
 	<script src="owl.carousel.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.owl-carousel').owlCarousel({
 			    items:5,
 			    loop:false,
-			    margin:10,
+			    margin:0,
 			    merge:true,
 			    nav:true,
 			    navText:[],
-			    autoplay:false,
+			    autoplay:true,
 			    autoplaySpeed:1000,
 			    responsive:{
 			        678:{mergeFit:true},
