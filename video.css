@@ -1,29 +1,28 @@
 /* -------------------- header elements -------------------- */
 .voting-info a {
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .voting-info a:hover {
 	text-decoration: none;
 	color: #296B9B;
 }
 .message {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 
 
 /* -------------------- main elements -------------------- */
 .voting-info .element{
-	height: 600px;
+	height: 500px;
 	font-size: 2rem;
 	line-height: 260px;
+	border-radius: 0;
 }
 .video-container {
 	display: inline-block;
 	width: 100%;
-	border: 2px solid #fff;
-	border-radius: 16px;
 	margin: 15px 0;
 	overflow: hidden;
 }
