@@ -155,8 +155,8 @@ a {
 
 /* -------------------- main elements -------------------- */
 .jumbo {
-	padding-top: 200px;
-	padding-bottom: 60px;
+	padding-top: 120px;
+	padding-bottom: 20px;
 }
 .jumbo .element {
 	background-color: rgba(0, 0, 0, 0);
@@ -174,7 +174,7 @@ a {
 	text-align: right;
 	line-height: 150%;
 	font-size: 0.9rem;
-	color: #fff;
+	color: #F7F8F8;
 	width: 85%;
 	position: absolute;
 	bottom: 80px;
@@ -258,7 +258,6 @@ a {
 .info {
 	padding-top: 120px;
 	padding-bottom: 50px;
-	border-top: 2px solid #fff;
 }
 .info .title {
 	background-color: #F8C751;
@@ -266,7 +265,6 @@ a {
 	margin-bottom: 24px;
 	line-height: 40px;
 
-	color: #000;
 	font-size: 1.25rem;
 	font-weight: bold;
 }
