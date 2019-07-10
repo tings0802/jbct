@@ -1,0 +1,145 @@
+/* -------------------- header elements -------------------- */
+.voting-info a {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.voting-info a:hover {
+	text-decoration: none;
+	color: #296B9B;
+}
+
+
+
+/* -------------------- main elements -------------------- */
+.voting-info{
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+.message {
+	font-size: 1rem;
+	display: inline-block;
+	width: 100%;
+	padding-top: 20px;
+}
+.message h4 {
+	text-align: center;
+	font-weight: bold;
+}
+.voting-steps {
+	display: inline-block;
+	box-sizing: border-box;
+}
+.voting-icon {
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.voting-text {
+	display: inline-block;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+.voting-detail{
+	padding-bottom: 20px;
+}
+.voting-wrapper {
+	margin: 20px 0;
+}
+.voting-btn {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+@media (min-width: 576px) {
+	.voting-icon {
+		height: 150px;
+	}
+	.voting-text {
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 768px) {
+	.voting-icon {
+		height: 180px;
+	}
+	.voting-text {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 992px) {
+	.voting-icon {
+		height: 210px;
+	}
+	.voting-text {
+		font-size: 1.3rem;
+	}
+	.voting-btn {
+		width: 400px;
+	}
+}
+
+
+
+.video-group {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.video-container {
+	display: inline-block;
+	width: 100%;
+	margin: 15px 0;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.1s;
+}
+.video-container:hover {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0.1, 0.4);
+}
+.img-box {
+	display: block;
+}
+.img-box .img-inner {
+	width: 100%;
+	padding-top: 75%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.img-box .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-position: center;
+
+	/*background-image: url('../v0.3.0/icon.png');*/
+}
+/*
+.img-box .vimg00 {background-image: url(video/video00.jpg);"}
+.img-box .vimg01 {background-image: url(video/video01.jpg);"}
+.img-box .vimg02 {background-image: url(video/video02.jpg);"}
+.img-box .vimg03 {background-image: url(video/video03.jpg);"}
+*/
+.text-box {
+	padding: 8px;
+	letter-spacing: 0.2px;
+	white-space: nowrap;
+	background-color: #F7F8F8;
+}
+.text-box a {
+	text-decoration: none;
+}
+.text-box .topic {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

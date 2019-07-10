@@ -1,0 +1,15 @@
+v1.0 colors
+
+white	#F7F8F8;
+
+beige	#F9F7D0;
+
+yellow	#F8C751;
+
+orange	#FA7D2B;
+
+blue	#296B9B;
+
+cyan	#1FAFD2;
+
+font-family: 'Noto Sans TC', sans-serif;
